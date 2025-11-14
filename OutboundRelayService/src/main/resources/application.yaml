@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: OutboundRelayService
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/casedb
+  kafka:
+    bootstrap-servers: localhost:9092
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    org.springframework.kafka.core.KafkaTemplate: DEBUG
